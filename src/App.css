@@ -135,6 +135,7 @@ body a {
 @media only screen and (min-width: 980px) {
   .description {
     display: table-cell;
+    max-width: 50%;
     height: 18rem;
     vertical-align: middle;
     padding: inherit;
