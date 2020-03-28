@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ListWords = (props) => {
-    const {word, link} = props;
+    const {word} = props;
 
     return(
         <>
@@ -10,7 +10,7 @@ const ListWords = (props) => {
                     <div className="container-list">
                         <ul>
                             <li>
-                                <a href={link} className="item">
+                                <a href={word} className="item">
                                     <span>{word}</span>
                                 </a>
                             </li>
