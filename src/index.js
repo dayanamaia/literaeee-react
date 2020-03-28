@@ -6,11 +6,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <Suspense fallback={null}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </Suspense>,
+    <Suspense fallback={null}>
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
+    </Suspense>,
   document.getElementById('root')
 );
 
