@@ -1,6 +1,5 @@
 import React from 'react';
 import Sidebar from './components/Sidebar/Sidebar.js';
-import ListWords from './components/ListWords/ListWords.js';
 import './App.css';
 
 function App() {
