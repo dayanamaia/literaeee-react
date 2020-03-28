@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ListWords = (props) => {
     const {word} = props;
@@ -10,9 +11,7 @@ const ListWords = (props) => {
                     <div className="container-list">
                         <ul>
                             <li>
-                                <a href={word} className="item">
-                                    <span>{word}</span>
-                                </a>
+                                <Link to={`/about-word/${word}`} className="item"><span>{word}</span></Link>
                             </li>
                         </ul>
                     </div>
