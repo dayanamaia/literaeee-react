@@ -4,7 +4,7 @@ import ListWords from '../../components/ListWords/ListWords';
 
 const Home = () => {
     const listWords = useWordRandom();
-    console.log(listWords);
+    
     return(
         <>
             {listWords && listWords.map(({headword, id}) => 
