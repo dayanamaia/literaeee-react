@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ListWords = (props) => {
-    const {word} = props;
+    const {listWords} = props;
 
     return(
         <>
@@ -10,9 +10,11 @@ const ListWords = (props) => {
                 <div className="list-words">
                     <div className="container-list">
                         <ul>
-                            <li>
-                                <Link to={`/about-word/${word}`} className="item"><span>{word}</span></Link>
-                            </li>
+                            {listWords && listWords.map(({ id, headword }) =>
+                                <li key={id}>
+                                    <Link to={`/about-word/${headword}`} className="item"><span>{headword}</span></Link>
+                                </li>
+                            )}
                         </ul>
                     </div>
                 </div>

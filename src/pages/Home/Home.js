@@ -7,9 +7,10 @@ const Home = () => {
     
     return(
         <>
-            {listWords && listWords.map(({headword, id}) => 
-                <ListWords key={id} word={headword} />
-            )}
+            {listWords && listWords.length > 0 
+            ? <ListWords listWords={listWords} /> 
+            : <p>nenhuma palavra encontrada</p>
+            }
         </>
     )
 }
