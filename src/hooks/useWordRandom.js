@@ -13,15 +13,15 @@ const useWordRandom = () => {
         async function fecthData() {
 
             if(item) {
-                setListWords(JSON.parse(item));
+                setListWords([JSON.parse(item)]);
             } else {
                 try{
                     const data = await fetch(urlAPI);
                     const json = await data.json();
                     const index = json.results.length;
-                    const word = json.results;
+                    const word = json.results[numRadom(index)];
 
-                    setListWords(word);
+                    setListWords([word]);
                     window.localStorage.setItem('list', JSON.stringify(word));
                 } catch(error) {
                     console.log(error);
