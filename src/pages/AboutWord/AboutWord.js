@@ -22,7 +22,7 @@ const AboutWord = () => {
                             <span className="category">palavra</span>
                             <span className="word">{headword}</span>
                             <span className="pronounce"> - {ipa}</span>
-                            <span> {part_of_speech} - {lang}</span>
+                            <span> {part_of_speech} {lang && <span>- {lang}</span>}</span>
                         </p>
                         {senses && senses[0].translations &&
                         <>

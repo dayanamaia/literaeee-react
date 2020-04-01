@@ -10,7 +10,7 @@ const useAboutWord = (word) => {
         async function fecthData() {
 
             if(item) {
-                //setListWords([JSON.parse(item)]);
+                setinfoWord(JSON.parse(item));
             } else {
                 try{
                     const data = await fetch(urlAPI);
