@@ -1,0 +1,2 @@
+(this["webpackJsonptarefa-bootcamp-react-rotas-integracao-api"]=this["webpackJsonptarefa-bootcamp-react-rotas-integracao-api"]||[]).push([[5],{36:function(a,t,e){"use strict";e.r(t);var n=e(0),r=e.n(n);t.default=function(){return r.a.createElement(r.a.Fragment,null,r.a.createElement("h2",null,"NotFound"))}}}]);
+//# sourceMappingURL=5.7286281a.chunk.js.map
