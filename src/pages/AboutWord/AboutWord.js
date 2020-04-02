@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import useAboutWord from '../../hooks/useAboutWord';
+import { NavLink } from 'react-router-dom';
 
 const AboutWord = () => {
     const { word } = useParams();
@@ -15,7 +16,10 @@ const AboutWord = () => {
     return(
         <>
             <div className="modal-word">
-                <div className="btn-close"><span title="fechar">X</span></div>
+                <div className="btn-close"><NavLink to="/" activeStyle={{
+                    textDecoration: "none",
+                    color: "#FFF"
+                }}>x</NavLink></div>
                 <div className="modal-container">
                     <div className="modal-content">
                         <p>

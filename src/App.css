@@ -201,12 +201,11 @@ body a {
   }
 }
 
-@charset "UTF-8";
 .btn-close {
   position: absolute;
   top: 0;
   right: 10%;
-  width: 40px;
+  width: 60px;
   height: 40px;
   background-color: #72b0e9;
   border-radius: 6px;
@@ -217,16 +216,13 @@ body a {
   z-index: 5;
   display: table;
   cursor: pointer;
+  line-height: 58px;
 }
 @media only screen and (min-width: 980px) {
   .btn-close {
     width: 60px;
     height: 60px;
   }
-}
-.btn-close:hover {
-  background-color: #fff;
-  color: #72b0e9;
 }
 .btn-close span {
   display: table-cell;

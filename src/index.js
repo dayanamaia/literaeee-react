@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <Suspense fallback={null}>
-        <BrowserRouter>
+        <BrowserRouter basename="/literaeee-react">
             <App/>
         </BrowserRouter>
     </Suspense>,
